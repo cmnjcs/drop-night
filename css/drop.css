@@ -3,7 +3,7 @@
   src: url('../media/amarurgt.ttf');
 }
 body {
-  margin: 10px;
+  margin: 0 10px;
   background: black;
 }
 h1,
@@ -26,7 +26,9 @@ span {
 }
 #content {
   top: 0;
-  margin: 35vh;
+  left: 0;
+  right: 0;
+  margin: 35vh 0 0;
   position: absolute;
 }
 #inputSection div {
@@ -57,6 +59,8 @@ span {
 #progressBarSection .progress {
   height: 80px;
   border-radius: 0px;
+  margin: auto;
+  max-width: 75%;
 }
 #progressBarSection .progress-bar {
   transition: width .25s ease;
