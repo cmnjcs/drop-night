@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>wooo</title>
+  	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  	<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
+  	<link rel="stylesheet" href="css/drop.css" type="text/css">
+  	<script src="js/sjcl.js"></script>
+  	<script src="js/jquery-3.1.1.min.js"></script>
+  	<script src="js/drop.js"></script>
+  </head>
+  <body>
+  	<canvas id="c"></canvas>
+	<a href="http://nyan.cat" target="_blank">
+		<span id="className">UCT 17001</span>
+	</a>
+  	<div id="content">
+	  	<div id="inputSection" class="centered">
+	  		<div>
+	  			<span>ciphertext: </span>
+	  			<input id="ciphertext" type=text placeholder="meow" />
+	  		</div>
+	  		<div>
+	  			<span>password: </span>
+	  			<input id="password" type=text placeholder="meow" />
+	  		</div>
+	  		<div>
+	  			<button id="submitButton" class="btn btn-danger" onclick="infoSubmitted()"><span>DECRYPT</span></button>
+	  		</div>
+	  	</div>
+	  	<div id="progressBarSection" class="centered">
+		  	<h1>DECRYPTING</h1>
+		  	<div class="progress">
+				<div id="progressBar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+					<span id="percentageComplete">0%</span>
+				</div>
+			</div>
+			<div id="results">
+				<div>
+					<span class="visible">Base: </span><span id="base">█</span>
+				</div>
+				<div>
+					<span class="visible">Unit: </span><span id="unit">█</span>
+				</div>
+			</div>
+		</div>
+	</div>
+  </body>
+  <script src="js/matrixBackground.js"></script>
+</html>

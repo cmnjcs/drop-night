@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>wooo</title>
+    <link rel="stylesheet" href="css/gen.css" type="text/css">
+    <script src="js/sjcl.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/gen.js"></script>
+</head>
+
+<body>
+    <a href="http://nyan.cat" target="_blank">
+        <span id="className">UCT 17001</span>
+    </a>
+    <div id="content">
+    	<h3>Instructions</h3>
+    	<p>Fill in the inputs for the base and the unit. Come up with a password (no requirements on length, characters, or otherwise) and enter it. Click the button. Copy the ciphertext and password somewhere safe. Wash, rinse, repeat.
+    	</p>
+        <div>
+            <span>Base: </span>
+            <input id="base" /><span>Enter the base, in whatever format (ex. Maxwell AFB, Vandenberg Air Force Base)</span>
+        </div>
+        <div>
+            <span>Unit: </span>
+            <input id="unit" /><span>Enter the unit, in whatever format (ex. 26th NOS, 315th Network Warfare Squadron)</span>
+        </div>
+        <div>
+            <span>Password: </span>
+            <input id="password" /><span>Enter a password (preferably something not too long)</span>
+        </div>
+        <div>
+            <button id="submit" onclick="generate()">Generate ciphertext</button>
+        </div>
+        <div>
+        	<span>Ciphertext: </span>
+            <input id="ciphertext" /><span>Copy and paste this exactly!</span>
+        </div>
+    </div>
+</body>
+
+</html>

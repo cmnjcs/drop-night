@@ -1,0 +1,81 @@
+@font-face {
+  font-family: USAF;
+  src: url('../media/amarurgt.ttf');
+}
+body {
+  margin: 10px;
+  background: black;
+}
+h1,
+span {
+  font-family: Courier, monospace;
+  color: #1ec503;
+}
+.centered {
+  text-align: center;
+  max-width: 100%;
+  margin: auto;
+}
+#className {
+  font-family: USAF;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+#content {
+  top: 0;
+  margin: 35vh;
+  position: absolute;
+}
+#inputSection div {
+  margin: 30px auto;
+}
+#inputSection span,
+#inputSection input {
+  font-size: 45px;
+}
+#inputSection button {
+  border-radius: 0px;
+}
+#inputSection button span {
+  margin: auto 50px;
+  color: white;
+}
+#progressBarSection {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: none;
+}
+#progressBarSection h1 {
+  color: red;
+  font-size: 80px;
+  font-weight: bold;
+}
+#progressBarSection .progress {
+  height: 80px;
+  border-radius: 0px;
+}
+#progressBarSection .progress-bar {
+  transition: width .25s ease;
+  height: 80px;
+  background-image: none;
+  background-color: #044A0B;
+}
+#progressBarSection .red {
+  background-color: red;
+}
+#progressBarSection span {
+  font-size: 60px;
+  color: white;
+  line-height: 80px;
+}
+#progressBarSection #results {
+  display: none;
+  margin-top: 100px;
+}
+#progressBarSection #results .visible {
+  color: #1ec503;
+}
