@@ -162,6 +162,5 @@ function putText(target, message, index, interval) {
 }
 
 function reset() {
-    console.log('resetting');
     $('#progressBar').css({ width: '0%' });
 }
