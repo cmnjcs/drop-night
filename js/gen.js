@@ -13,7 +13,5 @@ function generate() {
 
 	var ciphertext = sjcl.encrypt(password, encodedJson);
 
-
-
-	$('#ciphertext').val(JSON.stringify(ciphertext));
+	$('#ciphertext').val(encodeURI(ciphertext));
 }

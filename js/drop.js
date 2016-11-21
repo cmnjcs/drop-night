@@ -115,12 +115,7 @@ function startProgressBar() {
 // and assign the results to the global variables (which
 // are back towards the top of the file)
 function decryptInfo(ciphertext, password) {
-    base = "Maxwell Air Force Base";
-    unit = "26th Network Operations Squadron";
-
-    console.log(ciphertext);
-
-    var deencodedJson = JSON.parse(ciphertext);
+    var deencodedJson = decodeURI(ciphertext);
     console.log(deencodedJson);
     var decrypted = sjcl.decrypt(password, deencodedJson);
     console.log(decrypted);
