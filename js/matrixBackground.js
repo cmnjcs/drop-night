@@ -1,3 +1,5 @@
+// gratefully sourced from http://thecodeplayer.com/walkthrough/matrix-rain-animation-html5-canvas-javascript
+
 var c = document.getElementById("c");
 var ctx = c.getContext("2d");
 
