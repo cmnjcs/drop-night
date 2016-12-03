@@ -21,6 +21,23 @@ var availableSounds = [
     'R2 taking the comlink.mp3'
 ];
 
+// on load, see if the URL contains ciphertext. if so, put it
+// in the ciphertext input. execute this on page load
+window.onload = function() {
+	// no ciphertext present
+	if (this.location.search.length === 0 ) {
+		return;
+	}
+	// can't handle any parameters besides ct
+	var key = this.location.search.substr(1,2);
+	var ct = this.location.search.substr(4);
+	if (key !== 'ct') {
+		console.log('not a ciphertext input');
+		return;
+	}
+	$('#ciphertext').val(ct);
+};
+
 function infoSubmitted() {
     console.log('button clicked');
     $('#submitButton').prop('disabled', true);
@@ -156,6 +173,6 @@ function putText(target, message, index, interval) {
     }
 }
 
-function reset() {
-    $('#progressBar').css({ width: '0%' });
-}
+// function reset() {
+//     $('#progressBar').css({ width: '0%' });
+// }
